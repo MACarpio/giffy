@@ -1,0 +1,39 @@
+.container-list {
+  columns: 4 120px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  gap: 0.5rem;
+}
+.list-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: calc(1.2em + 0.7vw);
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0;
+  margin-top: 0;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+
+  border-radius: 0.5rem;
+  color: initial;
+}
+
+@media screen and (max-width: 420px) {
+}
+
+.container-list div:nth-child(odd) {
+  border: 3px solid #1af;
+  background-color: #1af;
+}
+.container-list div:nth-child(even) {
+  border: 3px solid #f12;
+  background-color: #f12;
+}
+.container-list div:nth-child(3n) {
+  border: 3px solid #fa1;
+  background-color: #fa1;
+}

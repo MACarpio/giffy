@@ -1,0 +1,34 @@
+.Gif-container {
+  font-size: 12px;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5em;
+  min-height: 20px;
+  overflow: hidden;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.Gif-title {
+  color: #fff;
+  margin-bottom: 0;
+  position: absolute;
+  font-size: 0.5rem;
+  bottom: 0;
+  text-align: left;
+  display: block;
+  left: 0;
+  background-color: #2229;
+  opacity: 0;
+}
+.Gif-imagen {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Gif-container:hover .Gif-title {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
