@@ -1,0 +1,46 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  padding: 0 5%;
+  z-index: 999999999;
+  color: #fff;
+}
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  margin-right: -15px;
+}
+.Navbar a {
+  display: block;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+.Navbar ul li {
+  width: 100%;
+  padding: 0 10px;
+  position: relative;
+}
+.Navbar ul a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.8px;
+  background-color: #fff;
+  left: 0;
+  bottom: -5px;
+  transform: scale(0);
+}
+.Navbar ul li:hover ::after {
+  transform: scale(0.8);
+  transition: transform 0.2s linear;
+}
+
+.Navbar-box {
+  height: 75px;
+}
