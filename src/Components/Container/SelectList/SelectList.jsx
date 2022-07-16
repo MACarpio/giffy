@@ -7,7 +7,7 @@ export default function SelectList() {
   const [path, setPath] = useLocation();
   const buscar = (e) => {
     e.preventDefault();
-    setPath("/Result/" + search);
+    search.length > 0 ? setPath("/Result/" + search) : setPath("/Search");
   };
   const cambioKeyword = (e) => {
     setSearch(e.target.value);
@@ -22,20 +22,31 @@ export default function SelectList() {
   ];
   return (
     <>
-      <h1 className="title-select">Mas Buscadas</h1>
-      {Variables.map((variables) => {
-        return (
-          <Link key={variables} to={`/Result/${variables}`}>
-            <a className="link-search">{variables}</a>
-          </Link>
-        );
-      })}
+      <div className="MasBuscadas">
+        <h1 className="title-select">Mas Buscadas</h1>
+        <div className="listBusquedas">
+          {Variables.map((variables) => {
+            return (
+              <Link key={variables} to={`/Result/${variables}`}>
+                <a className="link-search">{variables}</a>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
       <br />
-      <h1> Buscar </h1>
-      <form className="select-form" onSubmit={buscar}>
-        <input onChange={cambioKeyword} type="text" value={search} />
-        <button type="submit">Buscar</button>
-      </form>
+      <div className="busqueda">
+        <h1> Buscar </h1>
+        <form className="select-form" onSubmit={buscar}>
+          <input
+            onChange={cambioKeyword}
+            type="text"
+            value={search}
+            nullValue={"random"}
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
     </>
   );
 }
