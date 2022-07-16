@@ -21,7 +21,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 620px) {
   .Search-header {
     flex-direction: column;
   }
@@ -39,7 +39,7 @@
     padding: 0 2%;
   }
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 621px) {
   .Search-header {
     flex-direction: row;
   }

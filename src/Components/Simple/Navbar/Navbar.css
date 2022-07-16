@@ -4,11 +4,13 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  height: 70px;
+  height: 50px;
   position: fixed;
   padding: 0 5%;
   z-index: 999999999;
   color: #fff;
+  background-color: #1a1c22a5;
+  backdrop-filter: blur(10px);
 }
 .Navbar ul {
   list-style: none;
@@ -42,5 +44,5 @@
 }
 
 .Navbar-box {
-  height: 75px;
+  height: 50px;
 }

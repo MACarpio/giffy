@@ -22,9 +22,6 @@
   color: initial;
 }
 
-@media screen and (max-width: 420px) {
-}
-
 .container-list div:nth-child(odd) {
   border: 3px solid #1af;
   background-color: #1af;

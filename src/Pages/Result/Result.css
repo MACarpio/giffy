@@ -21,12 +21,13 @@
   height: 100%;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 620px) {
   .Result-header {
     flex-direction: column;
   }
   .Result-ListGifs {
     width: 100%;
+    padding: 0% 0.5%;
   }
   .Result-SelectList {
     width: 100%;
@@ -39,7 +40,7 @@
     padding: 0 2%;
   }
 }
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 621px) {
   .Result-header {
     flex-direction: row;
   }
