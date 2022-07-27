@@ -17,7 +17,7 @@
   display: flex;
   margin-right: -15px;
 }
-.Navbar a {
+.Navbar ul a {
   display: block;
   list-style: none;
   color: #fff;
@@ -45,4 +45,18 @@
 
 .Navbar-box {
   height: 50px;
+}
+.Navbar-logo img {
+  height: 25px;
+}
+.Navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  gap: 0.5rem;
+  letter-spacing: 1px;
+  padding-left: 5px;
 }
