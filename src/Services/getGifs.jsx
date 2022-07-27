@@ -1,6 +1,7 @@
-const apiKey = "E2Qmj0iZcmk8EccqHJanSHyGIRyl2Dye";
+import { API_KEY, API_URL } from "./config";
+
 export function getSearchGifs({ keyword }) {
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=10&offset=0&rating=g&lang=en`;
+  const url = `${API_URL}/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=15&offset=0&rating=g&lang=en`;
 
   return fetch(url)
     .then((response) => response.json())
@@ -16,7 +17,7 @@ export function getSearchGifs({ keyword }) {
 }
 
 export function getTrendingGifs() {
-  const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=10&rating=g`;
+  const url = `${API_URL}/gifs/trending?api_key=${API_KEY}&limit=15&rating=g`;
 
   return fetch(url)
     .then((response) => response.json())
