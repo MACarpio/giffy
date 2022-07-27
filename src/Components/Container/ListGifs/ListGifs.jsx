@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { getSearchGifs } from "../../../Services/getGifs";
+import React from "react";
 import Gif from "../../Simple/Gif/Gif";
 import "./ListGifs.css";
 
 export default function ListGifs({ gifs, title }) {
   return (
     <div>
-      <h1 className="list-title">{title}</h1>
+      {title != undefined ? (
+        <h1 className="list-title">{decodeURI(title)}</h1>
+      ) : null}
       <div className="container-list">
         {gifs.map((gif) => {
           return (
